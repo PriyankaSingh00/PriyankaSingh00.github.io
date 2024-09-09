@@ -13,27 +13,44 @@
         <p>Here's a list of things I want to do in my lifetime!</p>
     </header>
 
-    <section class="bucket-list">
+    <!-- Form to Add New Bucket List Item -->
+    <section class="add-item-section">
+        <h2>Add a New Bucket List Item</h2>
+        <form id="bucketForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="image-url">Image URL:</label>
+            <input type="url" id="image-url" name="image-url" required>
+
+            <button type="submit">Add to Bucket List</button>
+        </form>
+    </section>
+
+    <!-- Bucket List Items -->
+    <section class="bucket-list" id="bucketList">
         <div class="bucket-item">
-            <img src="images/northern-lights.png" alt="Bungee Jumping">
+            <img src="images/bungee-jumping.jpg" alt="Bungee Jumping">
             <h2>Bungee Jumping</h2>
             <p>Experience the thrill of bungee jumping from a high bridge.</p>
         </div>
 
         <div class="bucket-item">
-            <img src="images/northern-lights.png" alt="Northern Lights">
+            <img src="images/northern-lights.jpg" alt="Northern Lights">
             <h2>See the Northern Lights</h2>
             <p>Travel to Iceland and witness the beauty of the Aurora Borealis.</p>
         </div>
 
         <div class="bucket-item">
-            <img src="images/northern-lights.png" alt="Scuba Diving">
+            <img src="images/scuba-diving.jpg" alt="Scuba Diving">
             <h2>Scuba Diving in the Great Barrier Reef</h2>
             <p>Explore the underwater world of the Great Barrier Reef in Australia.</p>
         </div>
-
-        <!-- Add more bucket list items as needed -->
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
